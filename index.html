@@ -93,7 +93,7 @@
         <div id="result-card" class="hidden bg-slate-900/90 border border-purple-500/30 rounded-3xl p-8 sm:p-10 text-center shadow-2xl">
             <div class="text-6xl mb-4" id="result-icon">🎉</div>
             <h3 class="text-2xl sm:text-3xl font-black text-white mb-2" id="result-title">نتيجة التحدي</h3>
-            <p class="text-slate-300 text-sm mb-6" id="result-msg">احسنت!</p>
+            <p class="text-slate-300 text-sm mb-6" id="result-msg">أحسنتِ!</p>
 
             <div class="bg-slate-950 border border-purple-900/50 p-6 rounded-2xl max-w-xs mx-auto mb-8">
                 <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-1">النتيجة النهائية:</span>
@@ -112,11 +112,10 @@
         <div class="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-right">
             <div>
                 <p class="text-sm font-bold text-slate-200">مشروع أسئلة قانونية - التوعية بالجرائم المعلوماتية</p>
-                <p class="text-xs text-purple-400 mt-0.5">خريجات إدارة الأعمال - شعبة 13 🎓</p>
+                <p class="text-xs text-purple-400 mt-0.5">إعداد وتطوير: خريجات إدارة الأعمال - شعبة 13 🎓</p>
             </div>
             <div class="bg-purple-950/80 border border-purple-500/30 px-4 py-2 rounded-xl">
-                <span class="text-xs text-slate-400">تصميم وتطوير:</span>
-                <span class="text-xs font-black text-amber-400 mr-1">ريناد اللحياني 👩‍💻✨</span>
+                <span class="text-xs font-extrabold text-amber-400">خريجات إدارة الأعمال 👩‍🎓✨</span>
             </div>
         </div>
     </footer>
@@ -216,7 +215,7 @@
             },
             {
                 type: "قضية واقعية",
-                question: "قام 'خالد' بتسجيل مكالمة صوتية لزميله دون علمه ونشرها في مبيعات أو مجموعة الواتساب:",
+                question: "قام 'خالد' بتسجيل مكالمة صوتية لزميله دون علمه ونشرها في مجموعة الواتساب:",
                 options: [
                     "تصرفه صحيح طالما لم يغير الصوت.",
                     "يُعد مرتـكباً لجريمة التجسس والتشهير المعاقب عليها قانوناً.",
@@ -307,7 +306,6 @@
             const q = questions[currentQ];
             const buttons = document.getElementById('options-container').children;
             
-            // Disable all buttons
             for (let btn of buttons) {
                 btn.disabled = true;
                 btn.classList.add('cursor-not-allowed', 'opacity-80');
